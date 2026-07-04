@@ -16,8 +16,7 @@ An ATS Builder. Free, Open-Source, local-first resume builder. Customizable pres
 - open-next on Cloudflare (hosting only, no server-side handling of user resume data)
 - shadcn (base-ui variant)
 - Tailwind CSS
-- dnd-kit (section reordering, drag and drop)
-- [PlateJS](https://platejs.org/llms.txt)
+- [TipTap](https://tiptap.dev/docs) (rich text editing, restricted extension set)
 - motion/react (animation)
 - zustand (in-memory state)
 - IndexedDB via idb (persistence layer)
@@ -31,7 +30,7 @@ An ATS Builder. Free, Open-Source, local-first resume builder. Customizable pres
 
 ## Architecture Rule: Two Layers
 
-1. Structural layer. Fixed section types (header, summary, experience, education, skills, custom sections from an approved list). Each field has a restricted PlateJS schema: bold, italic, bullet list, ordered list, link. No tables, no multi-column layout, no text boxes, no inline images, no custom heading levels beyond what the section template defines.
+1. Structural layer. Fixed section types (header, summary, experience, education, skills, custom sections from an approved list). Each field has a restricted TipTap schema: bold, italic, bullet list, ordered list, link. No tables, no multi-column layout, no text boxes, no inline images, no custom heading levels beyond what the section template defines.
 
 2. Presentation layer. Typography, spacing, color, accent styles, section visual ordering. Fully customizable. Must never alter the underlying linear text structure used for parsing or export.
 
@@ -45,10 +44,9 @@ Any feature request that adds structural freedom (tables, columns, floating elem
 - Schema for a resume document: versioned. Add a schema version field. Write a migration path before changing field shapes, do not silently break old saved resumes.
 
 
-## Drag and Drop (dnd-kit)
+## Reordering
 
-- Used for section reordering and field reordering within a section (e.g., experience entries).
-- Drag and drop changes ordering metadata only. It does not alter content schema.
+- Section and entry reordering (if/when built) changes ordering metadata only. It does not alter content schema.
 
 ## Export
 
@@ -65,11 +63,10 @@ Any feature request that adds structural freedom (tables, columns, floating elem
 
 1. Resume data schema + IndexedDB layer
 2. zustand store wired to persistence
-3. PlateJS fields with restricted schemas
-4. dnd-kit section/field reordering
-5. Presentation layer (themes, typography, spacing)
-6. Export pipeline (PDF, then docx/txt)
-7. Parser validation pass
+3. TipTap fields with restricted schemas
+4. Presentation layer (themes, typography, spacing)
+5. Export pipeline (PDF, then docx/txt)
+6. Parser validation pass
 
 ## Non-Goals
 
