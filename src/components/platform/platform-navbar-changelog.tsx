@@ -102,7 +102,7 @@ export function PlatformNavbarChangelog() {
 
         <SheetFooter className="border-t">
           <a
-            href="https://github.com/rimzzlabs/lanjut/releases"
+            href="https://github.com/bizznara-hub/cv-generator/releases"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground"

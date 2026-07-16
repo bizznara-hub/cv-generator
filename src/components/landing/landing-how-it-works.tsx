@@ -47,7 +47,7 @@ export function LandingHowItWorks() {
           reduceMotion={reduceMotion}
         >
           <HowItWorksScreenshot
-            src="/lanjut-templates.png"
+            src="/scribecv-templates.png"
             alt={t("screenshotTemplatesAlt")}
             width={2880}
             height={1800}
@@ -64,7 +64,7 @@ export function LandingHowItWorks() {
           reduceMotion={reduceMotion}
         >
           <HowItWorksScreenshot
-            src="/lanjut-editor.png"
+            src="/scribecv-editor.png"
             alt={t("screenshotEditorAlt")}
             width={1437}
             height={871}

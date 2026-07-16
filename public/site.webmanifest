@@ -1,6 +1,6 @@
 {
-  "name": "Lanjut - Resume ATS Platform",
-  "short_name": "Lanjut",
+  "name": "ScribeCV - Resume ATS Platform",
+  "short_name": "ScribeCV",
   "description": "Build and optimize resumes for applicant tracking systems.",
   "start_url": "/",
   "display": "standalone",

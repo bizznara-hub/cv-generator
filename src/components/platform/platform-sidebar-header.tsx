@@ -27,7 +27,7 @@ export function PlatformSidebarHeader() {
             className="size-7"
           />
           <div className="flex flex-col">
-            <span className="text-sm font-medium">Lanjut</span>
+            <span className="text-sm font-medium">ScribeCV</span>
             <span className="text-xs text-muted-foreground">
               <span className="sr-only">{t("localFirst")}</span> {t("tagline")}
             </span>

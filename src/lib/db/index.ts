@@ -9,7 +9,7 @@ export {
 } from "./resume";
 export {
   getDb,
-  type LanjutDB,
   META_KEYS,
   type ResumeBackup,
+  type ScribeCVDB,
 } from "./schema";

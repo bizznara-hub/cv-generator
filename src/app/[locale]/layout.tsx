@@ -53,8 +53,8 @@ export async function generateMetadata(props: {
       "open source",
       "local-first",
     ],
-    authors: [{ name: "Rizki Citra", url: "https://rimzzlabs.com" }],
-    creator: "Rizki Citra",
+    authors: [{ name: "For Humanity", url: SITE.url }],
+    creator: "For Humanity",
     openGraph: {
       type: "website",
       url: locale === routing.defaultLocale ? "/" : `/${locale}`,

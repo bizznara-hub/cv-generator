@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Lanjut: Bikin resume ATS gratis dan local-first",
-    "description": "Lanjut itu pembuat resume open source gratis yang sepenuhnya jalan di browser kamu; tanpa akun, tanpa unggah apa pun. Atur gayanya sesukamu; tiap ekspor tersusun rapi biar lolos sistem pelacakan pelamar."
+    "title": "ScribeCV: Bikin resume ATS gratis dan local-first",
+    "description": "ScribeCV itu pembuat resume open source gratis yang sepenuhnya jalan di browser kamu; tanpa akun, tanpa unggah apa pun. Atur gayanya sesukamu; tiap ekspor tersusun rapi biar lolos sistem pelacakan pelamar."
   },
   "language": {
     "label": "Bahasa",
@@ -10,10 +10,10 @@
   },
   "hero": {
     "badge": "Gratis & open source",
-    "srHeading": "Lanjut, pembuat resume ATS:",
+    "srHeading": "ScribeCV, pembuat resume ATS:",
     "headingLine1": "Tingkatkan Peluang Interview,",
     "headingLine2": "Bukan Tumpukan Penolakan.",
-    "description": "Lanjut itu pembuat resume local-first yang jalan sepenuhnya di browser kamu. Tanpa akun, tanpa unggah-unggah. Atur gayanya sesukamu, dan tiap ekspor tersusun rapi biar lolos sistem pelacakan pelamar.",
+    "description": "ScribeCV itu pembuat resume local-first yang jalan sepenuhnya di browser kamu. Tanpa akun, tanpa unggah-unggah. Atur gayanya sesukamu, dan tiap ekspor tersusun rapi biar lolos sistem pelacakan pelamar.",
     "ctaPrimary": "Bikin gratis",
     "ctaSecondary": "Intip Template",
     "stat1Value": "100%",
@@ -26,8 +26,8 @@
   "previewEditor": {
     "heading": "Editor yang lengkap",
     "description": "Bangun resume yang aman-ATS di editor yang fokus. Tanpa AI asal-asalan, tanpa fitur yang bikin pusing. Langsung ke intinya, tanpa buang-buang waktu kamu.",
-    "imageAlt": "Editor Lanjut",
-    "caption": "Editor Resume ATS Lanjut"
+    "imageAlt": "Editor ScribeCV",
+    "caption": "Editor Resume ATS ScribeCV"
   },
   "howItWorks": {
     "heading": "Cara kerjanya",
@@ -41,15 +41,15 @@
     "step3Kicker": "03 · Ekspor",
     "step3Title": "Lolos dari parser",
     "step3Description": "Unduh PDF, DOCX, atau teks biasa, dan tiap extractor bakal baca ulang persis seurutan yang kamu tulis. Itu aja rahasianya.",
-    "screenshotTemplatesAlt": "Galeri template Lanjut yang nampilin resume yang sama dalam gaya tipografi berbeda",
-    "screenshotEditorAlt": "Editor Lanjut dengan pratinjau resume di samping bagian-bagian terstruktur",
+    "screenshotTemplatesAlt": "Galeri template ScribeCV yang nampilin resume yang sama dalam gaya tipografi berbeda",
+    "screenshotEditorAlt": "Editor ScribeCV dengan pratinjau resume di samping bagian-bagian terstruktur",
     "terminalCaption": "yang dibaca ATS",
     "terminalReadingOrder": "✓ urutan baca tetap utuh"
   },
   "closure": {
     "kicker": "04 · Lamar",
-    "heading": "Lanjut. Resume. Resume.",
-    "description": "Namanya udah jadi janjinya: lanjut artinya terus maju. Pilih template atau mulai dari halaman kosong; dua-duanya gratis, open source, dan resume kamu nggak pernah keluar dari browser.",
+    "heading": "ScribeCV. Resume. Resume.",
+    "description": "Tulis sekali, kebaca di mana aja. Pilih template atau mulai dari halaman kosong; dua-duanya gratis, open source, dan resume kamu nggak pernah keluar dari browser.",
     "ctaPrimary": "Buat resume kamu",
     "ctaSecondary": "Intip template"
   },
@@ -59,7 +59,7 @@
     "startBuilding": "Mulai bikin",
     "templates": "Template",
     "github": "GitHub",
-    "rights": "© {year} Lanjut. Open source, berlisensi AGPL-3.0."
+    "rights": "© {year} ScribeCV. Open source, berlisensi AGPL-3.0."
   },
   "tour": {
     "controls": {
@@ -70,7 +70,7 @@
     },
     "library": {
       "welcome": {
-        "title": "Halo, selamat datang di Lanjut!",
+        "title": "Halo, selamat datang di ScribeCV!",
         "content": "Pembuat resume gratis dan local-first. Semua yang kamu tulis tetap di browser ini; nggak ada yang dikirim ke server."
       },
       "create": {
@@ -149,12 +149,12 @@
     },
     "changelog": {
       "whatsNew": "Apa yang baru",
-      "description": "Peningkatan terbaru untuk Lanjut, dijelaskan dengan bahasa yang mudah.",
+      "description": "Peningkatan terbaru untuk ScribeCV, dijelaskan dengan bahasa yang mudah.",
       "latest": "Terbaru",
       "fullChangelog": "Changelog lengkap di GitHub",
       "entries": {
         "0_6_0": [
-          "Lanjut sekarang bisa Bahasa Indonesia. Ganti seluruh tampilan antara Bahasa Inggris dan Indonesia kapan saja lewat tombol bahasa di bilah navigasi.",
+          "ScribeCV sekarang bisa Bahasa Indonesia. Ganti seluruh tampilan antara Bahasa Inggris dan Indonesia kapan saja lewat tombol bahasa di bilah navigasi.",
           "Tiap resume bisa punya bahasanya sendiri: pilih Bahasa Inggris atau Indonesia per dokumen, dan judul bagian serta tanggal di ekspor PDF, DOCX, dan TXT kamu mengikuti pilihan itu.",
           "Atur ulang urutan keahlian dan bahasa: tahan pegangan di samping entri lalu geser ke posisinya, atau pindahkan pakai keyboard. Urutan barunya langsung diterapkan ke pratinjau dan semua ekspor.",
           "Bagian yang masih kosong kini ada keterangannya: daripada cuma tombol, tiap bagian tanpa isi menampilkan petunjuk singkat tentang apa yang bisa kamu tambahkan.",
@@ -169,7 +169,7 @@
           "Bagian Pengalaman Organisasi yang baru: tampilkan peran sukarelawan, mahasiswa, dan komunitas lengkap dengan tanggal dan poin pentingnya, sama seperti pengalaman kerja. Muncul di setiap template dan ekspor, dan resume lama kamu mendapatkannya secara otomatis.",
           "Resume yang tersimpan lebih aman saat aplikasi diperbarui: salinan cadangan disimpan di perangkatmu sebelum setiap perubahan format data, dan resume yang belum bisa dibaca aplikasi diberi tanda pemberitahuan, bukannya hilang.",
           "Tur berpemandu kini menuntun kamu mengelilingi dasbor, template, dan editor saat pertama kali berkunjung.",
-          "Halaman depan menjelaskan cara kerja Lanjut, dan ditutup dengan tombol satu klik untuk mulai membuat resume baru.",
+          "Halaman depan menjelaskan cara kerja ScribeCV, dan ditutup dengan tombol satu klik untuk mulai membuat resume baru.",
           "Menemukan bug atau butuh fitur? Laporkan dari bilah sisi; kami sudah menyiapkan isu GitHub-nya untuk kamu.",
           "Di ponsel, dialog kini terbuka sebagai laci yang lebih mudah dijangkau dan bisa digeser untuk menutup."
         ],
@@ -197,8 +197,8 @@
       "downloadResume": "Unduh Resume"
     },
     "sidebar": {
-      "home": "Lanjut - Halaman Utama",
-      "logoAlt": "Logo Lanjut",
+      "home": "ScribeCV - Halaman Utama",
+      "logoAlt": "Logo ScribeCV",
       "localFirst": "Local-First",
       "tagline": "Pembuat Resume ATS",
       "platform": "Platform",
@@ -233,7 +233,7 @@
     },
     "unreadable": {
       "title": "Beberapa resume butuh versi aplikasi yang lebih baru",
-      "description": "{count, plural, other {# resume}} disimpan sama versi Lanjut yang lebih baru dari yang jalan di tab ini. Tenang, semuanya tetap aman di perangkat kamu. Segarin halaman buat update aplikasinya dan lihat lagi."
+      "description": "{count, plural, other {# resume}} disimpan sama versi ScribeCV yang lebih baru dari yang jalan di tab ini. Tenang, semuanya tetap aman di perangkat kamu. Segarin halaman buat update aplikasinya dan lihat lagi."
     },
     "grid": {
       "emptyTitle": "Nggak ada resume yang cocok",
@@ -378,7 +378,7 @@
       "phone": "Nomor telepon",
       "phonePlaceholder": "+62812345678",
       "website": "Situs web",
-      "websitePlaceholder": "rimzzlabs.com",
+      "websitePlaceholder": "johndoe.com",
       "location": "Lokasi",
       "locationDesc": "Kamu dari mana?",
       "city": "Kota",

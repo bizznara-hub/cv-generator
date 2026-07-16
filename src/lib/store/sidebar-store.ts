@@ -29,7 +29,7 @@ export const useSidebarStore = create<SidebarStoreState>()(
       },
     }),
     {
-      name: "lanjut:sidebar",
+      name: "scribecv:sidebar",
       skipHydration: true,
       partialize: (state) => ({ open: state.open }),
     },

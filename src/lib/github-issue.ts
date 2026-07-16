@@ -1,7 +1,7 @@
 import type { BUG_AREAS } from "./forms/bug-report";
 import type { FEATURE_LAYERS } from "./forms/feature-request";
 
-const NEW_ISSUE_URL = "https://github.com/rimzzlabs/lanjut/issues/new";
+const NEW_ISSUE_URL = "https://github.com/bizznara-hub/cv-generator/issues/new";
 const TITLE_SUBJECT_MAX_LENGTH = 72;
 
 export interface BugReportIssue {

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Lanjut: Free, local-first ATS résumé builder",
-    "description": "Lanjut is a free, open-source résumé builder that stays entirely in your browser; no account, nothing uploaded. Style it freely; every export is structured to sail through applicant tracking systems."
+    "title": "ScribeCV: Free, local-first ATS résumé builder",
+    "description": "ScribeCV is a free, open-source résumé builder that stays entirely in your browser; no account, nothing uploaded. Style it freely; every export is structured to sail through applicant tracking systems."
   },
   "language": {
     "label": "Language",
@@ -10,10 +10,10 @@
   },
   "hero": {
     "badge": "Free & open source",
-    "srHeading": "Lanjut, ATS Resume builder:",
+    "srHeading": "ScribeCV, ATS Resume builder:",
     "headingLine1": "Land The Interview,",
     "headingLine2": "Not The Reject Pile.",
-    "description": "Lanjut is a local-first résumé builder that stays entirely in your browser. No account, nothing uploaded. Style it freely, and every export is structured to sail through applicant tracking systems.",
+    "description": "ScribeCV is a local-first résumé builder that stays entirely in your browser. No account, nothing uploaded. Style it freely, and every export is structured to sail through applicant tracking systems.",
     "ctaPrimary": "Start building free",
     "ctaSecondary": "Browse Templates",
     "stat1Value": "100%",
@@ -26,8 +26,8 @@
   "previewEditor": {
     "heading": "A fine-grained editor",
     "description": "Build your ATS-safe résumé in a focused editor. No AI slop, no overwhelming features. Straight to the point, without wasting your time.",
-    "imageAlt": "Lanjut Editor",
-    "caption": "Lanjut's ATS Resume Editor"
+    "imageAlt": "ScribeCV Editor",
+    "caption": "ScribeCV's ATS Resume Editor"
   },
   "howItWorks": {
     "heading": "How it works",
@@ -41,15 +41,15 @@
     "step3Kicker": "03 · Export",
     "step3Title": "Survive the parser",
     "step3Description": "Download PDF, DOCX, or plain text, and any extractor reads it back in the order you wrote it. That's the whole trick.",
-    "screenshotTemplatesAlt": "The Lanjut template gallery showing the same résumé in different typographic styles",
-    "screenshotEditorAlt": "The Lanjut editor with a résumé preview beside structured sections",
+    "screenshotTemplatesAlt": "The ScribeCV template gallery showing the same résumé in different typographic styles",
+    "screenshotEditorAlt": "The ScribeCV editor with a résumé preview beside structured sections",
     "terminalCaption": "what the ATS reads",
     "terminalReadingOrder": "✓ reading order intact"
   },
   "closure": {
     "kicker": "04 · Apply",
-    "heading": "Lanjut. Resume. Résumé.",
-    "description": "The name is the pitch: lanjut means continue. Pick a template or start from a blank page; either way it's free, open source, and your résumé never leaves your browser.",
+    "heading": "ScribeCV. Resume. Résumé.",
+    "description": "Write it once, and every export reads it back. Pick a template or start from a blank page; either way it's free, open source, and your résumé never leaves your browser.",
     "ctaPrimary": "Create your résumé",
     "ctaSecondary": "Browse templates"
   },
@@ -59,7 +59,7 @@
     "startBuilding": "Start building",
     "templates": "Templates",
     "github": "GitHub",
-    "rights": "© {year} Lanjut. Open source, AGPL-3.0 licensed."
+    "rights": "© {year} ScribeCV. Open source, AGPL-3.0 licensed."
   },
   "tour": {
     "controls": {
@@ -70,7 +70,7 @@
     },
     "library": {
       "welcome": {
-        "title": "Welcome to Lanjut",
+        "title": "Welcome to ScribeCV",
         "content": "A free, local-first résumé builder. Everything you write stays in this browser; nothing is ever sent to a server."
       },
       "create": {
@@ -149,12 +149,12 @@
     },
     "changelog": {
       "whatsNew": "What's new",
-      "description": "The latest improvements to Lanjut, in plain language.",
+      "description": "The latest improvements to ScribeCV, in plain language.",
       "latest": "Latest",
       "fullChangelog": "Full changelog on GitHub",
       "entries": {
         "0_6_0": [
-          "Lanjut now speaks Bahasa Indonesia. Switch the entire interface between English and Indonesian anytime with the language toggle in the navbar.",
+          "ScribeCV now speaks Bahasa Indonesia. Switch the entire interface between English and Indonesian anytime with the language toggle in the navbar.",
           "Give each résumé its own language: pick English or Indonesian per document, and the section headings and dates in your PDF, DOCX, and TXT exports follow that choice.",
           "Reorder your skills and languages: grab the handle next to an entry and drag it into place, or use the keyboard to move it. The new order flows straight into the preview and every export.",
           "Empty sections now tell you so: instead of a lone button, each section without entries shows a short prompt for what to add.",
@@ -169,7 +169,7 @@
           "New Organization Experience section: showcase volunteer, student, and community roles with dates and highlights, just like work experience. It shows up in every template and export, and your existing résumés get it automatically.",
           "Your saved résumés are safer during app updates: a backup copy is kept on your device before any data-format upgrade, and a résumé the app can't read yet is flagged with a notice instead of disappearing.",
           "A guided tour now walks you through the dashboard, the templates, and the editor on your first visit.",
-          "The landing page walks through how Lanjut works, ending with a one-click way to start a new résumé.",
+          "The landing page walks through how ScribeCV works, ending with a one-click way to start a new résumé.",
           "Found a bug or missing a feature? Report it from the sidebar; we prefill the GitHub issue for you.",
           "On your phone, dialogs now open as drawers that are easier to reach and swipe away."
         ],
@@ -197,8 +197,8 @@
       "downloadResume": "Download Résumé"
     },
     "sidebar": {
-      "home": "Lanjut - Home Page",
-      "logoAlt": "Lanjut Logo",
+      "home": "ScribeCV - Home Page",
+      "logoAlt": "ScribeCV Logo",
       "localFirst": "Local-First",
       "tagline": "ATS Resume Builder",
       "platform": "Platform",
@@ -233,7 +233,7 @@
     },
     "unreadable": {
       "title": "Some résumés need a newer version of the app",
-      "description": "{count, plural, one {# résumé was} other {# résumés were}} saved by a newer version of Lanjut than the one this tab is running. They are still stored safely on this device. Refresh the page to update the app and see them again."
+      "description": "{count, plural, one {# résumé was} other {# résumés were}} saved by a newer version of ScribeCV than the one this tab is running. They are still stored safely on this device. Refresh the page to update the app and see them again."
     },
     "grid": {
       "emptyTitle": "No résumés match",
@@ -378,7 +378,7 @@
       "phone": "Phone Number",
       "phonePlaceholder": "+62812345678",
       "website": "Website",
-      "websitePlaceholder": "rimzzlabs.com",
+      "websitePlaceholder": "johndoe.com",
       "location": "Location",
       "locationDesc": "Where are you from?",
       "city": "City",

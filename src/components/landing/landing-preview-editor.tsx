@@ -38,7 +38,7 @@ export function LandingPreviewEditor() {
         className="mt-8 rounded-xl border bg-muted/40 bg-[radial-gradient(color-mix(in_oklab,var(--color-foreground)_7%,transparent)_1px,transparent_1px)] bg-size-[0.625rem_0.625rem] p-2 shadow-2xl shadow-primary/10 md:mt-12 md:rounded-2xl md:p-3"
       >
         <Image
-          src="/lanjut-editor.png"
+          src="/scribecv-editor.png"
           alt={t("imageAlt")}
           title={t("imageAlt")}
           width={1437}

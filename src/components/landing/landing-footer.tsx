@@ -20,7 +20,7 @@ export function LandingFooter() {
               height={20}
               className="size-5 rounded-[4px]"
             />
-            <span className="font-heading text-sm font-semibold">Lanjut</span>
+            <span className="font-heading text-sm font-semibold">ScribeCV</span>
           </div>
           <p className="text-xs text-muted-foreground">{t("tagline")}</p>
         </div>
@@ -42,7 +42,7 @@ export function LandingFooter() {
             {t("templates")}
           </Link>
           <a
-            href="https://github.com/rimzzlabs/lanjut"
+            href="https://github.com/bizznara-hub/cv-generator"
             target="_blank"
             rel="noreferrer"
             className="transition-colors hover:text-foreground"

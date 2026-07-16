@@ -1,4 +1,4 @@
-# Contributing to Lanjut
+# Contributing to ScribeCV
 
 Thanks for helping build a free, open-source, local-first résumé builder. This document covers the mechanics of getting a change merged. For the product and architecture rules (the two-layer model, what is in and out of scope), read [AGENTS.md](AGENTS.md) first; PRs that add structural freedom to the résumé document (tables, columns, floating elements) will be declined regardless of implementation quality.
 
@@ -10,8 +10,8 @@ Prerequisites:
 - pnpm 10 (the repo pins `pnpm@10.30.1` via the `packageManager` field, so `corepack enable` gives you the right version automatically)
 
 ```sh
-git clone git@github.com:rimzzlabs/lanjut.git
-cd lanjut
+git clone git@github.com:bizznara-hub/cv-generator.git
+cd cv-generator
 pnpm install
 pnpm dev
 ```
@@ -102,4 +102,4 @@ All participation is covered by the [Code of Conduct](CODE_OF_CONDUCT.md). To re
 
 ## License
 
-Lanjut is licensed under [AGPL-3.0-only](LICENSE). By contributing, you agree that your contributions are licensed under the same terms, as certified by your DCO sign-off.
+ScribeCV is licensed under [AGPL-3.0-only](LICENSE). By contributing, you agree that your contributions are licensed under the same terms, as certified by your DCO sign-off.

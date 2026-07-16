@@ -50,7 +50,7 @@ the raw pre-migration form into the `backups` object store, keyed by
 This happens on read, before the migrated shape has any chance of being
 persisted, so a buggy ladder step is always recoverable.
 
-To recover: DevTools → Application → IndexedDB → `lanjut` → `backups`, copy the
+To recover: DevTools → Application → IndexedDB → `scribecv` → `backups`, copy the
 `doc` value for the affected id/version, and restore it into the `resumes`
 store (the app will re-migrate it on the next read).
 

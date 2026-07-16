@@ -2,12 +2,12 @@
   <img src="public/favicon.svg" alt="" width="56" height="56" />
 </p>
 
-<h1 align="center">Lanjut</h1>
+<h1 align="center">ScribeCV</h1>
 
 <p align="center">
   ATS Builder. Free, open-source resume builder. Runs locally in the browser. No account, no server-side storage of resume content.
   <br />
-  <a href="https://lanjut.rimzzlabs.com"><strong>lanjut.rimzzlabs.com</strong></a>
+  <a href="https://scribecv.vercel.app"><strong>scribecv.vercel.app</strong></a>
 </p>
 
 ## What This Is
@@ -62,8 +62,8 @@ Every template renders the same linear block sequence, so switching templates ne
 ## Getting Started
 
 ```bash
-git clone https://github.com/rimzzlabs/lanjut.git
-cd lanjut
+git clone https://github.com/bizznara-hub/cv-generator.git
+cd cv-generator
 pnpm install
 pnpm dev
 ```
@@ -102,4 +102,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow (setup, branches, c
 
 ## License
 
-[AGPL-3.0-only](LICENSE). Copyright © 2026 Lanjut Contributors.
+[AGPL-3.0-only](LICENSE). Copyright © 2026 ScribeCV Contributors.

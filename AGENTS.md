@@ -6,7 +6,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 # AGENTS.md
 
-## Lanjut -> Resume -> Résumé.
+## ScribeCV -> Resume -> Résumé.
 
 An ATS Builder. Free, Open-Source, local-first resume builder. Customizable presentation layer, constrained structural layer for ATS parseability.
 

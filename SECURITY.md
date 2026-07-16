@@ -1,6 +1,6 @@
 # Security Policy
 
-Lanjut is local-first: résumé content is stored only in the user's browser
+ScribeCV is local-first: résumé content is stored only in the user's browser
 (IndexedDB) and is never sent to a server. That narrows the attack surface but
 does not eliminate it. Vulnerabilities we care about include, for example:
 
@@ -16,9 +16,9 @@ Please report vulnerabilities privately. Do not open a public issue or pull
 request for a security problem.
 
 Preferred channel: GitHub private vulnerability reporting, at
-<https://github.com/rimzzlabs/lanjut/security/advisories/new>.
+<https://github.com/bizznara-hub/cv-generator/security/advisories/new>.
 
-Alternatively, email rimzzlabs@proton.me with a subject line starting with
+Alternatively, email office@med.unhas.ac.id with a subject line starting with
 `[SECURITY]`.
 
 In your report, include:
@@ -37,6 +37,6 @@ Please give us a reasonable window to ship a fix before any public disclosure.
 
 ## Supported versions
 
-Lanjut is a continuously deployed web application; only the latest deployed
+ScribeCV is a continuously deployed web application; only the latest deployed
 version (the tip of `main`) is supported. If you self-host a fork, please
 verify the issue reproduces on the current release before reporting.

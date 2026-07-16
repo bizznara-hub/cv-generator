@@ -1,7 +1,7 @@
 import { type DBSchema, type IDBPDatabase, openDB } from "idb";
 import type { Resume } from "@/lib/resume";
 
-const DB_NAME = "lanjut";
+const DB_NAME = "scribecv";
 
 /**
  * IndexedDB structural version. Governs object stores and indexes ONLY; document
@@ -33,7 +33,7 @@ export interface ResumeBackup {
   doc: unknown;
 }
 
-export interface LanjutDB extends DBSchema {
+export interface ScribeCVDB extends DBSchema {
   resumes: {
     key: string;
     value: Resume;
@@ -50,20 +50,20 @@ export interface LanjutDB extends DBSchema {
   };
 }
 
-let dbPromise: Promise<IDBPDatabase<LanjutDB>> | null = null;
+let dbPromise: Promise<IDBPDatabase<ScribeCVDB>> | null = null;
 
 /**
  * Lazily open the singleton database. Guarded against server rendering; this is
  * the only persistence tier and it never leaves the browser.
  */
-export function getDb(): Promise<IDBPDatabase<LanjutDB>> {
+export function getDb(): Promise<IDBPDatabase<ScribeCVDB>> {
   if (typeof indexedDB === "undefined") {
     throw new Error(
       "IndexedDB is unavailable (server or unsupported environment).",
     );
   }
   if (!dbPromise) {
-    dbPromise = openDB<LanjutDB>(DB_NAME, DB_VERSION, {
+    dbPromise = openDB<ScribeCVDB>(DB_NAME, DB_VERSION, {
       upgrade(db) {
         if (!db.objectStoreNames.contains("resumes")) {
           const store = db.createObjectStore("resumes", { keyPath: "id" });
