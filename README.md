@@ -7,7 +7,7 @@
 <p align="center">
   ATS Builder. Free, open-source resume builder. Runs locally in the browser. No account, no server-side storage of resume content.
   <br />
-  <a href="https://scribecv.vercel.app"><strong>scribecv.vercel.app</strong></a>
+  <a href="https://cv-generator-six-beta.vercel.app"><strong>cv-generator-six-beta.vercel.app</strong></a>
 </p>
 
 ## What This Is
