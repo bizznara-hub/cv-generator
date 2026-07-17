@@ -31,7 +31,11 @@ export async function downloadResume(
 
   if (format === "docx") {
     const { downloadResumeDocx } = await import("./docx/download-resume-docx");
-    await downloadResumeDocx(preview, fileName);
+    await downloadResumeDocx(
+      preview,
+      fileName,
+      resolveTemplateId(resume.templateId),
+    );
     return;
   }
 

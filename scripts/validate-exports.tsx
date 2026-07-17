@@ -9,7 +9,8 @@ import { Font, renderToBuffer } from "@react-pdf/renderer";
 import { Packer } from "docx";
 import JSZip from "jszip";
 import { extractText, getDocumentProxy } from "unpdf";
-import { buildAwalDocx } from "@/components/editor/docx/resume-to-docx";
+import { DOCX_TEMPLATE_STYLES } from "@/components/editor/docx/docx-template-styles";
+import { buildTemplateDocx } from "@/components/editor/docx/resume-to-docx";
 import { TEMPLATE_PDF_DOCUMENTS } from "@/components/editor/pdf/template-pdf-document";
 import { resumeToPreview } from "@/components/editor/resume-to-preview";
 import { resumeToText } from "@/components/editor/resume-to-text";
@@ -140,13 +141,7 @@ async function main(): Promise<void> {
   registerFonts();
   const preview = resumeToPreview(SEED_RESUME);
 
-  const outputs: [string, string][] = [
-    ["TXT", resumeToText(preview)],
-    [
-      "DOCX",
-      await extractDocxText(await Packer.toBuffer(buildAwalDocx(preview))),
-    ],
-  ];
+  const outputs: [string, string][] = [["TXT", resumeToText(preview)]];
 
   // Every template's PDF must extract cleanly, not just the default one.
   for (const [template, PdfDocument] of Object.entries(
@@ -156,6 +151,17 @@ async function main(): Promise<void> {
       `PDF(${template})`,
       await extractPdfText(
         await renderToBuffer(<PdfDocument preview={preview} />),
+      ),
+    ]);
+  }
+
+  // Every template's DOCX must extract cleanly too: each has its own typography
+  // tokens (docx-template-styles.ts), not just the default "awal" look.
+  for (const [template, style] of Object.entries(DOCX_TEMPLATE_STYLES)) {
+    outputs.push([
+      `DOCX(${template})`,
+      await extractDocxText(
+        await Packer.toBuffer(buildTemplateDocx(preview, style)),
       ),
     ]);
   }
