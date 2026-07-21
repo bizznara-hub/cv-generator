@@ -41,7 +41,7 @@ export function LandingHero() {
           aria-hidden
           className="absolute -inset-1 rounded-full bg-primary/25 blur-md animate-pulse motion-reduce:animate-none"
         />
-        <span className="relative inline-flex items-center gap-2 rounded-full border border-primary/40 bg-muted px-3 py-1 text-xs font-medium text-muted-foreground sm:px-4 sm:py-1.5 sm:text-sm">
+        <span className="relative inline-flex items-center gap-2 rounded-full border border-primary/20 bg-background/50 backdrop-blur-md px-3 py-1 text-xs font-medium text-foreground sm:px-4 sm:py-1.5 sm:text-sm shadow-sm">
           <FileText className="size-3.5 sm:size-4" />
           {t("badge")}
         </span>
@@ -49,7 +49,7 @@ export function LandingHero() {
 
       <motion.h1
         variants={itemVariants}
-        className="mb-4 text-4xl leading-[1.08] font-bold tracking-tight sm:text-5xl md:mb-6 md:text-6xl lg:text-7xl bg-linear-to-r from-primary to-sky-800 bg-clip-text text-transparent dark:from-emerald-200 dark:to-cyan-400"
+        className="mb-4 font-heading text-4xl leading-[1.08] font-bold tracking-tight sm:text-5xl md:mb-6 md:text-6xl lg:text-7xl bg-linear-to-r from-primary to-violet-600 bg-clip-text text-transparent dark:from-indigo-300 dark:to-fuchsia-300"
       >
         <span className="sr-only">{t("srHeading")}</span> {t("headingLine1")}
         <br />
@@ -69,12 +69,12 @@ export function LandingHero() {
       >
         <Button
           size="lg"
-          className="gap-2"
+          className="gap-2 group transition-all duration-300 shadow-[0_0_20px_rgba(109,40,217,0.15)] hover:shadow-[0_0_25px_rgba(109,40,217,0.3)]"
           nativeButton={false}
           render={<Link href="/platform" />}
         >
           {t("ctaPrimary")}
-          <ArrowRight />
+          <ArrowRight className="transition-transform group-hover:translate-x-1" />
         </Button>
         <Button
           size="lg"

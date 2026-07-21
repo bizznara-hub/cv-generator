@@ -1,12 +1,33 @@
-<svg width="100%" viewBox="0 0 520 162" xmlns="http://www.w3.org/2000/svg" role="img" style="">
-<title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">ScribeCV logo</title>
-<desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Logomark of a folded resume page with a forward continue chevron, beside the wordmark ScribeCV, in teal.</desc>
-<rect x="8" y="8" width="144" height="144" rx="32" fill="#1f7a70" style="fill:rgb(31, 122, 112);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-<path d="M44,32 L100,32 L116,48 L116,128 L44,128 Z" fill="#ffffff" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-<path d="M100,32 L116,48 L100,48 Z" fill="#c9e9e4" style="fill:rgb(201, 233, 228);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-<rect x="56" y="64" width="48" height="6" rx="3" fill="#1f7a70" style="fill:rgb(31, 122, 112);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-<rect x="56" y="80" width="36" height="6" rx="3" fill="#bfe3de" style="fill:rgb(191, 227, 222);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-<path d="M56,100 L74,108 L56,116" fill="none" stroke="#1f7a70" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" style="fill:none;stroke:rgb(31, 122, 112);color:rgb(11, 11, 11);stroke-width:5px;stroke-linecap:round;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
-<text x="180" y="90" font-family="Arial, sans-serif" font-size="48" font-weight="500" fill="#241f1c" style="fill:rgb(36, 31, 28);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:48px;font-weight:500;text-anchor:start;dominant-baseline:auto">ScribeCV</text>
-<text x="182" y="116" font-family="Arial, sans-serif" font-size="15" fill="#8a7c74" letter-spacing="1.5" style="fill:rgb(138, 124, 116);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:15px;font-weight:400;text-anchor:start;dominant-baseline:auto">RESUME ATS PLATFORM</text>
+<svg width="100%" viewBox="0 0 520 162" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>ScribeCV</title>
+  <desc>ScribeCV logomark: interlocking geometric shapes with deep indigo and fuchsia gradients, signifying a modern, premium ATS builder.</desc>
+  <defs>
+    <linearGradient id="grad-main" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#c026d3" />
+    </linearGradient>
+    <linearGradient id="grad-sub" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4c1d95" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Hallmark-inspired minimalist geometric logomark (avoiding literal/slop document icons) -->
+  <g transform="translate(16, 24)">
+    <rect x="0" y="36" width="72" height="72" rx="24" fill="url(#grad-main)" />
+    <rect x="36" y="0" width="72" height="72" rx="24" fill="url(#grad-sub)" opacity="0.9" style="mix-blend-mode: hard-light;" />
+    <path d="M 36 36 L 72 36 L 72 72 L 36 72 Z" fill="#ffffff" opacity="0.1" />
+  </g>
+
+  <!-- Typography with the new Outfit font -->
+  <text x="156" y="100" font-family="'Outfit', -apple-system, BlinkMacSystemFont, sans-serif" font-size="64" font-weight="700" letter-spacing="-1.5" fill="#0f172a" class="brand-text">ScribeCV</text>
+  
+  <!-- Subtle, highly-tracked subheader -->
+  <text x="162" y="132" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="500" letter-spacing="4" fill="#64748b" text-transform="uppercase">ATS Resume Builder</text>
+
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .brand-text { fill: #f8fafc; }
+    }
+  </style>
 </svg>

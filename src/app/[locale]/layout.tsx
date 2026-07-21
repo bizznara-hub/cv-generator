@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Outfit } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -10,7 +10,7 @@ import { SITE } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-
+const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -91,7 +91,7 @@ export async function generateMetadata(props: {
 }
 
 export const viewport: Viewport = {
-  themeColor: "#1f7a70",
+  themeColor: "#6d28d9", // A vibrant indigo/violet hex matching the new primary color
 };
 
 export default async function RootLayout(props: {
@@ -117,6 +117,7 @@ export default async function RootLayout(props: {
         geistMono.variable,
         "font-sans",
         inter.variable,
+        outfit.variable,
       )}
     >
       <body>
