@@ -1,3 +1,7 @@
+/* Hallmark · macrostructure: Workbench (M05) · theme: Cobalt · section: how-it-works
+ * 3-column horizontal feature strip on desktop, stacked on mobile
+ */
+
 "use client";
 
 import { motion, useReducedMotion, type Variants } from "motion/react";
@@ -22,24 +26,29 @@ export function LandingHowItWorks() {
   return (
     <section
       id="how-it-works"
-      className="mx-auto w-11/12 max-w-5xl pb-24 md:pb-32"
+      className="mx-auto w-11/12 max-w-6xl pb-24 md:pb-32"
     >
+      {/* ── Section header ── */}
       <motion.div
         initial={reduceMotion ? { opacity: 0 } : { opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="text-center"
+        className="mb-14 border-b border-border pb-6 md:mb-20"
       >
+        <p className="mb-2 font-mono text-xs tracking-[0.18em] text-primary uppercase">
+          01 · How it works
+        </p>
         <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
           {t("heading")}
         </h2>
-        <p className="mx-auto mt-3 max-w-2xl text-sm text-muted-foreground text-balance sm:text-base">
+        <p className="mt-3 max-w-2xl text-sm text-muted-foreground text-balance sm:text-base">
           {t("subheading")}
         </p>
       </motion.div>
 
-      <div className="mt-10 space-y-10 md:mt-16 md:space-y-0">
+      {/* ── Steps: alternating layout rows ── */}
+      <div className="space-y-14 md:space-y-0">
         <HowItWorksRow
           kicker={t("step1Kicker")}
           title={t("step1Title")}
@@ -100,12 +109,12 @@ function HowItWorksRow(props: {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="grid items-center gap-5 md:grid-cols-12 md:gap-10"
+      className="grid items-center gap-6 md:grid-cols-12 md:gap-12"
     >
       <div
         className={props.flip ? "md:order-2 md:col-span-5" : "md:col-span-5"}
       >
-        <p className="font-mono text-xs tracking-widest text-primary uppercase">
+        <p className="font-mono text-xs tracking-[0.18em] text-primary uppercase">
           {props.kicker}
         </p>
         <h3 className="mt-2 text-xl font-bold tracking-tight sm:text-2xl">
@@ -131,13 +140,13 @@ function HowItWorksScreenshot(props: {
   height: number;
 }) {
   return (
-    <figure className="rounded-xl border bg-muted/40 bg-[radial-gradient(color-mix(in_oklab,var(--color-foreground)_7%,transparent)_1px,transparent_1px)] bg-size-[0.625rem_0.625rem] p-2 shadow-xl shadow-primary/10">
+    <figure className="overflow-hidden rounded-2xl border border-border bg-muted/30 p-2 shadow-lg shadow-primary/5">
       <Image
         src={props.src}
         alt={props.alt}
         width={props.width}
         height={props.height}
-        className="w-full rounded-lg border object-cover object-top"
+        className="w-full rounded-xl border border-border object-cover object-top"
       />
       <figcaption className="sr-only">{props.alt}</figcaption>
     </figure>
@@ -150,7 +159,7 @@ function HowItWorksArrow(props: { flip: boolean }) {
   return (
     <div
       aria-hidden
-      className="my-4 hidden justify-center text-muted-foreground/50 md:flex"
+      className="my-4 hidden justify-center text-muted-foreground/40 md:flex"
     >
       <svg
         aria-hidden="true"
@@ -197,21 +206,20 @@ function ArtifactParserOutput() {
   const t = useTranslations("howItWorks");
 
   return (
-    <div className="overflow-hidden rounded-xl border border-stone-800 bg-stone-950 text-left shadow-md">
-      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-stone-800 px-4 py-2">
-        <span className="font-mono text-[11px] text-stone-500">
+    <div className="overflow-hidden rounded-2xl border border-border bg-card text-left shadow-md">
+      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-border bg-muted/40 px-4 py-2.5">
+        <span className="font-mono text-[11px] text-muted-foreground">
           {t("terminalCaption")}
         </span>
-        <div className="flex gap-1.5 font-mono text-[10px] text-stone-400">
-          <span className="rounded border border-stone-700 px-1.5 py-0.5">
-            .pdf
-          </span>
-          <span className="rounded border border-stone-700 px-1.5 py-0.5">
-            .docx
-          </span>
-          <span className="rounded border border-stone-700 px-1.5 py-0.5">
-            .txt
-          </span>
+        <div className="flex gap-1.5 font-mono text-[10px] text-muted-foreground">
+          {[".pdf", ".docx", ".txt"].map((ext) => (
+            <span
+              key={ext}
+              className="rounded border border-border px-1.5 py-0.5"
+            >
+              {ext}
+            </span>
+          ))}
         </div>
       </div>
       <motion.div
@@ -221,29 +229,29 @@ function ArtifactParserOutput() {
         viewport={{ once: true, amount: 0.5 }}
         className="p-4 font-mono text-xs leading-relaxed sm:p-5 sm:text-sm"
       >
-        <motion.p variants={terminalLineVariants} className="text-stone-500">
+        <motion.p
+          variants={terminalLineVariants}
+          className="text-muted-foreground"
+        >
           $ pdftotext resume.pdf -
+        </motion.p>
+        <motion.p variants={terminalLineVariants} className="mt-3 text-primary">
+          EXPERIENCE
+        </motion.p>
+        <motion.p variants={terminalLineVariants} className="text-foreground">
+          Senior Frontend Engineer, Acme Corp
         </motion.p>
         <motion.p
           variants={terminalLineVariants}
-          className="mt-3 text-teal-400"
+          className="text-muted-foreground"
         >
-          EXPERIENCE
-        </motion.p>
-        <motion.p variants={terminalLineVariants} className="text-stone-200">
-          Senior Frontend Engineer, Acme Corp
-        </motion.p>
-        <motion.p variants={terminalLineVariants} className="text-stone-400">
           Mar 2022 – Present
         </motion.p>
-        <motion.p variants={terminalLineVariants} className="text-stone-200">
+        <motion.p variants={terminalLineVariants} className="text-foreground">
           - Led migration of a 200k-line codebase to a typed component library,
           cutting UI defects by 40%
         </motion.p>
-        <motion.p
-          variants={terminalLineVariants}
-          className="mt-3 text-teal-500"
-        >
+        <motion.p variants={terminalLineVariants} className="mt-3 text-primary">
           {t("terminalReadingOrder")}
         </motion.p>
       </motion.div>

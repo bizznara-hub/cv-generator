@@ -1,8 +1,23 @@
 <svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
-<rect x="0" y="0" width="160" height="160" rx="32" fill="#1f7a70"/>
-<path d="M40,28 L100,28 L120,48 L120,132 L40,132 Z" fill="#ffffff"/>
-<path d="M100,28 L120,48 L100,48 Z" fill="#c9e9e4"/>
-<rect x="54" y="66" width="52" height="8" rx="4" fill="#1f7a70"/>
-<rect x="54" y="86" width="38" height="8" rx="4" fill="#bfe3de"/>
-<path d="M54,108 L76,118 L54,128" fill="none" stroke="#1f7a70" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5b45c9"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b2a8f"/>
+      <stop offset="100%" stop-color="#5b45c9"/>
+    </linearGradient>
+  </defs>
+  <!-- Background rounded square -->
+  <rect x="0" y="0" width="160" height="160" rx="32" fill="url(#bg)"/>
+  <!-- Document body -->
+  <path d="M40,28 L100,28 L120,48 L120,132 L40,132 Z" fill="#ffffff"/>
+  <!-- Dog-ear fold -->
+  <path d="M100,28 L120,48 L100,48 Z" fill="#c4b5fd"/>
+  <!-- Text lines -->
+  <rect x="54" y="66" width="52" height="8" rx="4" fill="#5b45c9"/>
+  <rect x="54" y="86" width="38" height="8" rx="4" fill="#a78bfa"/>
+  <!-- Scribe quill / pen flourish -->
+  <path d="M54,108 L76,118 L54,128" fill="none" stroke="#5b45c9" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

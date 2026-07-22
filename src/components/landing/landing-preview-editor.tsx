@@ -9,19 +9,24 @@ export function LandingPreviewEditor() {
   const t = useTranslations("previewEditor");
 
   return (
-    <section className="mx-auto w-11/12 max-w-5xl pb-24 text-center md:pb-32">
+    <section className="mx-auto w-11/12 max-w-6xl pb-24 md:pb-32">
       <motion.div
         initial={reduceMotion ? { opacity: 0 } : { opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
-          {t("heading")}
-        </h2>
-        <p className="mx-auto mt-3 max-w-2xl text-sm text-muted-foreground text-balance sm:text-base">
-          {t("description")}
-        </p>
+        <div className="mb-14 border-b border-border pb-6 md:mb-0">
+          <p className="mb-2 font-mono text-xs tracking-[0.18em] text-primary uppercase">
+            02 · Editor
+          </p>
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
+            {t("heading")}
+          </h2>
+          <p className="mt-3 max-w-2xl text-sm text-muted-foreground text-balance sm:text-base">
+            {t("description")}
+          </p>
+        </div>
       </motion.div>
 
       <motion.figure
@@ -35,7 +40,7 @@ export function LandingPreviewEditor() {
           mass: 0.9,
           opacity: { duration: 0.4, ease: "easeOut" },
         }}
-        className="mt-8 rounded-xl border bg-muted/40 bg-[radial-gradient(color-mix(in_oklab,var(--color-foreground)_7%,transparent)_1px,transparent_1px)] bg-size-[0.625rem_0.625rem] p-2 shadow-2xl shadow-primary/10 md:mt-12 md:rounded-2xl md:p-3"
+        className="mt-8 overflow-hidden rounded-2xl border border-border bg-muted/30 p-2 shadow-2xl shadow-primary/8 md:mt-12 md:p-3"
       >
         <Image
           src="/scribecv-editor.png"
