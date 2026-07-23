@@ -119,7 +119,7 @@ export function LandingHero() {
           variants={reduceMotion ? undefined : itemVariants}
           className="relative"
         >
-          <WorkbenchPanel />
+          <WorkbenchPanel t={t} />
         </motion.div>
       </motion.div>
     </section>
@@ -168,7 +168,9 @@ const PARSE_LINES = [
   },
 ] as const;
 
-function WorkbenchPanel() {
+function WorkbenchPanel(props: {
+  t: ReturnType<typeof useTranslations<"hero">>;
+}) {
   const reduceMotion = useReducedMotion();
 
   return (
@@ -176,7 +178,7 @@ function WorkbenchPanel() {
       {/* Chrome bar */}
       <div className="flex items-center justify-between border-b border-border bg-muted/50 px-4 py-2.5">
         <span className="font-mono text-[11px] text-muted-foreground">
-          $ pdftotext resume.pdf -
+          {props.t("panelCaption")}
         </span>
         <div className="flex gap-1.5">
           {[".pdf", ".docx", ".txt"].map((ext) => (
@@ -239,12 +241,10 @@ function WorkbenchPanel() {
           }
           className="mt-3 border-t border-border pt-3 text-[10px] tracking-wide text-primary sm:text-xs"
         >
-          ✓ Reading order preserved · ATS-safe
+          {props.t("panelStatusLine")}
         </motion.p>
       </motion.div>
-      <figcaption className="sr-only">
-        ATS text extraction demo — shows resume parsed in linear reading order
-      </figcaption>
+      <figcaption className="sr-only">{props.t("panelFigcaption")}</figcaption>
     </figure>
   );
 }

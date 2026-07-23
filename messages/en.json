@@ -21,7 +21,10 @@
     "stat2Value": "No",
     "stat2Label": "Accounts",
     "stat3Value": "3",
-    "stat3Label": "Export formats"
+    "stat3Label": "Export formats",
+    "panelCaption": "what the ATS reads",
+    "panelStatusLine": "✓ Reading order preserved · ATS-safe",
+    "panelFigcaption": "ATS text extraction demo — résumé parsed in linear reading order"
   },
   "previewEditor": {
     "heading": "A fine-grained editor",
@@ -49,7 +52,7 @@
     "terminalReadingOrder": "✓ reading order intact"
   },
   "closure": {
-    "kicker": "04 · Apply",
+    "kicker": "03 · Apply",
     "heading": "ScribeCV. Resume. Résumé.",
     "description": "Write it once, and every export reads it back. Pick a template or start from a blank page; either way it's free, open source, and your résumé never leaves your browser.",
     "ctaPrimary": "Create your résumé",

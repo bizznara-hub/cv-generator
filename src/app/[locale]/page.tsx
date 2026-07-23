@@ -36,8 +36,8 @@ export default async function Home(props: {
       <LandingNavbar />
       <main>
         <LandingHero />
-        <LandingPreviewEditor />
         <LandingHowItWorks />
+        <LandingPreviewEditor />
         <LandingClosure />
       </main>
       <LandingFooter />

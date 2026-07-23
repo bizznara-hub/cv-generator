@@ -21,7 +21,10 @@
     "stat2Value": "Tanpa",
     "stat2Label": "Akun",
     "stat3Value": "3",
-    "stat3Label": "Format ekspor"
+    "stat3Label": "Format ekspor",
+    "panelCaption": "yang dibaca ATS",
+    "panelStatusLine": "✓ Urutan baca terjaga · aman ATS",
+    "panelFigcaption": "Demo ekstraksi teks ATS — resume terbaca dalam urutan linear"
   },
   "previewEditor": {
     "heading": "Editor yang lengkap",
@@ -49,7 +52,7 @@
     "terminalReadingOrder": "✓ urutan baca tetap utuh"
   },
   "closure": {
-    "kicker": "04 · Lamar",
+    "kicker": "03 · Lamar",
     "heading": "ScribeCV. Resume. Résumé.",
     "description": "Tulis sekali, kebaca di mana aja. Pilih template atau mulai dari halaman kosong; dua-duanya gratis, open source, dan resume kamu nggak pernah keluar dari browser.",
     "ctaPrimary": "Buat resume kamu",
