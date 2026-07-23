@@ -23,11 +23,6 @@ export function LandingClosure() {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className="overflow-hidden rounded-2xl border border-border bg-foreground px-8 py-16 md:py-20"
       >
-        {/* Cobalt monospaced kicker */}
-        <p className="mb-4 font-mono text-xs tracking-[0.18em] text-primary-foreground/50 uppercase">
-          {t("kicker")}
-        </p>
-
         <h2 className="max-w-2xl text-2xl font-bold tracking-tight text-background sm:text-3xl md:text-4xl">
           {t("heading")}
         </h2>

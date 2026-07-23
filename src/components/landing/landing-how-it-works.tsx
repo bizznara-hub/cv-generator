@@ -36,9 +36,6 @@ export function LandingHowItWorks() {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className="mb-14 border-b border-border pb-6 md:mb-20"
       >
-        <p className="mb-2 font-mono text-xs tracking-[0.18em] text-primary uppercase">
-          {t("sectionKicker")}
-        </p>
         <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
           {t("heading")}
         </h2>
