@@ -5,7 +5,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { LanguageSwitcher } from "../shared/language-switcher";
 
 const YEAR = new Date().getFullYear();
 
@@ -60,7 +59,6 @@ export function LandingFooter() {
             >
               {t("github")}
             </a>
-            <LanguageSwitcher />
           </nav>
         </div>
 

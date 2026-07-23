@@ -4,6 +4,7 @@ import { LandingClosure } from "@/components/landing/landing-closure";
 import { LandingFooter } from "@/components/landing/landing-footer";
 import { LandingHero } from "@/components/landing/landing-hero";
 import { LandingHowItWorks } from "@/components/landing/landing-how-it-works";
+import { LandingNavbar } from "@/components/landing/landing-navbar";
 import { LandingPreviewEditor } from "@/components/landing/landing-preview-editor";
 import { type Locale, routing } from "@/i18n/routing";
 
@@ -32,6 +33,7 @@ export default async function Home(props: {
 
   return (
     <>
+      <LandingNavbar />
       <main>
         <LandingHero />
         <LandingPreviewEditor />
