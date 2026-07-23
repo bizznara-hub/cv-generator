@@ -18,7 +18,7 @@ export function LandingPreviewEditor() {
       >
         <div className="mb-14 border-b border-border pb-6 md:mb-0">
           <p className="mb-2 font-mono text-xs tracking-[0.18em] text-primary uppercase">
-            02 · Editor
+            {t("sectionKicker")}
           </p>
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
             {t("heading")}

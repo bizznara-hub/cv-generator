@@ -25,12 +25,14 @@
   },
   "previewEditor": {
     "heading": "Editor yang lengkap",
+    "sectionKicker": "02 · Editor",
     "description": "Bangun resume yang aman-ATS di editor yang fokus. Tanpa AI asal-asalan, tanpa fitur yang bikin pusing. Langsung ke intinya, tanpa buang-buang waktu kamu.",
     "imageAlt": "Editor ScribeCV",
     "caption": "Editor Resume ATS ScribeCV"
   },
   "howItWorks": {
     "heading": "Cara kerjanya",
+    "sectionKicker": "01 · Cara kerja",
     "subheading": "Resume yang sama di tiap tahap: apa yang kamu ketik, apa yang dilihat perekrut, dan apa yang dibaca ulang parser.",
     "step1Kicker": "01 · Template",
     "step1Title": "Pilih template",
@@ -48,7 +50,7 @@
   },
   "closure": {
     "kicker": "04 · Lamar",
-    "heading": "ScribeCV. Resume. Resume.",
+    "heading": "ScribeCV. Resume. Résumé.",
     "description": "Tulis sekali, kebaca di mana aja. Pilih template atau mulai dari halaman kosong; dua-duanya gratis, open source, dan resume kamu nggak pernah keluar dari browser.",
     "ctaPrimary": "Buat resume kamu",
     "ctaSecondary": "Intip template"

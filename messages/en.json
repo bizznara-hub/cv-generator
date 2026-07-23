@@ -25,12 +25,14 @@
   },
   "previewEditor": {
     "heading": "A fine-grained editor",
+    "sectionKicker": "02 · Editor",
     "description": "Build your ATS-safe résumé in a focused editor. No AI slop, no overwhelming features. Straight to the point, without wasting your time.",
     "imageAlt": "ScribeCV Editor",
     "caption": "ScribeCV's ATS Resume Editor"
   },
   "howItWorks": {
     "heading": "How it works",
+    "sectionKicker": "01 · How it works",
     "subheading": "The same résumé at every stage: what you type, what recruiters see, and what the parser reads back.",
     "step1Kicker": "01 · Template",
     "step1Title": "Pick a template",
