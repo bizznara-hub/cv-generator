@@ -9,21 +9,19 @@ export function LandingPreviewEditor() {
   const t = useTranslations("previewEditor");
 
   return (
-    <section className="mx-auto w-11/12 max-w-6xl pb-24 md:pb-32">
+    <section className="mx-auto w-11/12 max-w-6xl pb-24 text-center md:pb-32">
       <motion.div
         initial={reduceMotion ? { opacity: 0 } : { opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <div className="mb-14 border-b border-border pb-6 md:mb-0">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
-            {t("heading")}
-          </h2>
-          <p className="mt-3 max-w-2xl text-sm text-muted-foreground text-balance sm:text-base">
-            {t("description")}
-          </p>
-        </div>
+        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
+          {t("heading")}
+        </h2>
+        <p className="mx-auto mt-3 max-w-2xl text-sm text-muted-foreground text-balance sm:text-base">
+          {t("description")}
+        </p>
       </motion.div>
 
       <motion.figure
