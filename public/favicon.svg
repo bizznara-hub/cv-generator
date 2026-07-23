@@ -1,23 +1,100 @@
-<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#5b45c9"/>
-      <stop offset="100%" stop-color="#7c3aed"/>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="60%" stop-color="#6d28d9" />
+      <stop offset="100%" stop-color="#7c3aed" />
     </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3b2a8f"/>
-      <stop offset="100%" stop-color="#5b45c9"/>
+
+    <!-- Document Fold Gradient -->
+    <linearGradient id="fold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c7d2fe" />
+      <stop offset="100%" stop-color="#818cf8" />
     </linearGradient>
+
+    <!-- Quill Feather Gradient -->
+    <linearGradient id="quill-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#4338ca" />
+    </linearGradient>
+
+    <!-- Accent Line Gradient -->
+    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.28" />
+    </filter>
   </defs>
-  <!-- Background rounded square -->
-  <rect x="0" y="0" width="160" height="160" rx="32" fill="url(#bg)"/>
-  <!-- Document body -->
-  <path d="M40,28 L100,28 L120,48 L120,132 L40,132 Z" fill="#ffffff"/>
-  <!-- Dog-ear fold -->
-  <path d="M100,28 L120,48 L100,48 Z" fill="#c4b5fd"/>
-  <!-- Text lines -->
-  <rect x="54" y="66" width="52" height="8" rx="4" fill="#5b45c9"/>
-  <rect x="54" y="86" width="38" height="8" rx="4" fill="#a78bfa"/>
-  <!-- Scribe quill / pen flourish -->
-  <path d="M54,108 L76,118 L54,128" fill="none" stroke="#5b45c9" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Squircle Base Container -->
+  <rect width="512" height="512" rx="112" fill="url(#bg-grad)" />
+
+  <!-- Outer Document Card with Shadow -->
+  <g filter="url(#shadow)">
+    <!-- Main Document Shape -->
+    <path d="M 144 96 
+             L 320 96 
+             L 376 152 
+             L 376 400 
+             C 376 413.25 365.25 424 352 424 
+             L 160 424 
+             C 146.75 424 136 413.25 136 400 
+             L 136 104 
+             C 136 99.58 139.58 96 144 96 Z" 
+          fill="#ffffff" />
+
+    <!-- Corner Dog-Ear Fold -->
+    <path d="M 320 96 
+             L 376 152 
+             L 332 152 
+             C 325.37 152 320 146.63 320 140 
+             Z" 
+          fill="url(#fold-grad)" />
+
+    <!-- Fold Shadow -->
+    <path d="M 320 152 L 376 152 L 320 96 Z" fill="#000000" opacity="0.08" />
+  </g>
+
+  <!-- Document Contents (ATS Structured Resume Lines) -->
+  <!-- Header Bar -->
+  <rect x="172" y="148" width="128" height="18" rx="9" fill="url(#line-grad)" />
+  <rect x="172" y="178" width="80" height="10" rx="5" fill="#a5b4fc" />
+
+  <!-- Divider Line -->
+  <rect x="172" y="206" width="168" height="4" rx="2" fill="#e0e7ff" />
+
+  <!-- Resume Section 1 -->
+  <rect x="172" y="226" width="64" height="10" rx="5" fill="#6366f1" opacity="0.85" />
+  <rect x="172" y="246" width="168" height="8" rx="4" fill="#cbd5e1" />
+  <rect x="172" y="262" width="140" height="8" rx="4" fill="#e2e8f0" />
+
+  <!-- Resume Section 2 -->
+  <rect x="172" y="288" width="52" height="10" rx="5" fill="#6366f1" opacity="0.85" />
+  <rect x="172" y="308" width="168" height="8" rx="4" fill="#cbd5e1" />
+  <rect x="172" y="324" width="120" height="8" rx="4" fill="#e2e8f0" />
+
+  <!-- Stylized Modern Quill / Scribe Pen Nib Flourish (Bottom-Right overlay) -->
+  <g filter="url(#shadow)">
+    <!-- Pen Body / Nib -->
+    <path d="M 336 296 
+             C 368 256 392 216 416 168 
+             C 400 200 376 240 348 276 
+             L 316 352 
+             C 314 356 314 360 316 364 
+             L 328 376 
+             C 332 378 336 378 340 376 
+             L 416 344 
+             C 380 372 340 396 296 412 
+             C 316 372 328 332 336 296 Z" 
+          fill="url(#quill-grad)" />
+
+    <!-- Pen Tip Nib Cut / Line Accent -->
+    <circle cx="332" cy="360" r="4" fill="#ffffff" />
+    <path d="M 332 360 L 318 374" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+  </g>
 </svg>
