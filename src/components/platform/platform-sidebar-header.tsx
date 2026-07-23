@@ -20,11 +20,11 @@ export function PlatformSidebarHeader() {
           className="flex items-center gap-2"
         >
           <Image
-            src="/favicon-512x512.png"
+            src="/favicon.svg"
             alt={t("logoAlt")}
-            width={280}
-            height={68}
-            className="size-7"
+            width={28}
+            height={28}
+            className="size-7 rounded-[6px]"
           />
           <div className="flex flex-col">
             <span className="text-sm font-medium">ScribeCV</span>
